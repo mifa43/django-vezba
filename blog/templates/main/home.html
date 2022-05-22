@@ -1,0 +1,197 @@
+{% extends 'main/base.html' %}
+
+
+{% block title %}
+    Home page
+{% endblock %}
+
+{% block content %}
+    <style>
+        @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+.snip1369 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  background: #20638f;
+  text-align: left;
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+}
+.snip1369 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.snip1369 > img,
+.snip1369 .image img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  max-width: 100%;
+}
+.snip1369 > img {
+  vertical-align: top;
+  position: relative;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.6;
+}
+.snip1369 figcaption,
+.snip1369 .image {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.snip1369 .image {
+  position: absolute;
+  top: 0;
+  bottom: 25%;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 1px 0 rgba(255, 255, 255, 0.2);
+}
+.snip1369 .image img {
+  position: absolute;
+  top: 0;
+}
+.snip1369 figcaption {
+  position: absolute;
+  top: 75%;
+  bottom: 46px;
+  left: 20px;
+  right: 20px;
+  border-bottom: 2px solid #ffffff;
+  padding-top: 20px;
+  z-index: 1;
+}
+.snip1369 h3,
+.snip1369 p {
+  margin: 0;
+}
+.snip1369 h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.snip1369 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  opacity: 0;
+}
+.snip1369 .read-more {
+  display: block;
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  color: #ffffff;
+  right: 0;
+  bottom: 0;
+  font-weight: 500;
+  position: absolute;
+}
+.snip1369 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+.snip1369:hover .read-more,
+.snip1369.hover .read-more,
+.snip1369:hover figcaption,
+.snip1369.hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.snip1369:hover figcaption,
+.snip1369.hover figcaption,
+.snip1369:hover .image,
+.snip1369.hover .image {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.snip1369:hover figcaption,
+.snip1369.hover figcaption {
+  top: 50%;
+}
+.snip1369:hover .image,
+.snip1369.hover .image {
+  bottom: 50%;
+}
+.snip1369:hover p,
+.snip1369.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure {
+    width: 25%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+    </style>
+    <h1>Welcome to home page</h1>
+    <div style="margin: 20px auto 0;padding-left: 8%; width:60%; height: 430px;display: block; ">
+    
+            <figure class="snip1369 green" >
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample15.jpg" alt="pr-sample15" />
+                <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample15.jpg" alt="pr-sample15" /></div>
+                <figcaption>
+                <h3>Jason Response</h3>
+                <p>I suppose if we couldn't laugh at things that don't make sense, we couldn't react to a lot of life.</p>
+                </figcaption><span class="read-more">
+                
+                Read More <i class="ion-android-arrow-forward"></i></span>
+                <a href="#"></a>
+            </figure>
+            <figure class="snip1369 orange"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample18.jpg" alt="pr-sample18" />
+                <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample18.jpg" alt="pr-sample18" /></div>
+                <figcaption>
+                <h3>Carnegie Mondover</h3>
+                <p>You know what we need, Hobbes? We need an attitude. Yeah, you can't be cool if you don't have an attitude.</p>
+                </figcaption><span class="read-more">
+                
+                Read More <i class="ion-android-arrow-forward"></i></span>
+                <a href="#"></a>
+            </figure>
+            <figure class="snip1369 orange"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample16.jpg" alt="pr-sample16" />
+                <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample16.jpg" alt="pr-sample16" /></div>
+                <figcaption>
+                <h3>Quiche Hollandaise</h3>
+                <p>The only skills I have patience to learn are those that have no real application in life.</p>
+                </figcaption><span class="read-more">
+                
+                Read More <i class="ion-android-arrow-forward"></i></span>
+                <a href="#"></a>
+            </figure>
+     
+    </div>
+    <!-- <div class="content" style="height: 600px;width: 60%;background-color: #4f5a64;margin: 27px auto 0;padding: 10px; position:  relative ;border-radius: 20px;" >
+        
+        <div class="content-card" style="height: 75%; width:65%; background-color: #fdfdfd; border-radius: 40px; margin: 20px auto 0;" >
+            <div class="content-image" style="height:50%;width:100%;background-size: 90% 100% ;background-position: center;  background-repeat: no-repeat, no-repeat; border-radius: 40px; background-image: url('data:image/jpeg;base64,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WBguLLuI822XzKqykJ711maBsrA2djXaajeL8Wk6hamHYLDBIZIswLm5bF122uDpfXo4qC2TxyMtbTvc/lBoA67gQNxa62gt0Hd2Ky8oqCQSRExkm3IrsITDUhswAJ3HUjuutoPXKayXPLJJcnO9xBJvpmOXutZW/anHBCwxMP5WQWAG9jToXnh1dfYVR9wtwVhs2IgF535D3VLt2dri2Ebsz7BRs55xXgL1L5x7vevKhVh/Od5egVtswWpWefqUREUVT0RERERERERERERERFr18OeN7Bvc0gdttPWqtRuu1XFUCukdTTPjd5uYlp4scSR8O0FaKiIvGSttkVraeQh+h9VKZl9zKHdid91vFYnYj1hReocuidtWEb1OZgpTGNoX1MNPFLvpmPZnv57XZMl+sBtj4qkur/8AcszWTO82OV3Yx3wXtsLrW4qHLtSBzmuIzbpnxFlLPlC0KahbVVHJF5bZpNwL3I6N+iNwmsduhcPrFrfUSrDszgDqcuklIMjhYAXIaN516ToP7K3xQ4DdVe0dpCpZgaN697NVjXu5puLkAneQDoT7e9XJrrBcwq81BVG36N5zN4WPQOzd2WVuh2hY5oP9+Koto0b8d2jIqfs+ra+OzjmF1HD8Jp3QNLhmL2Bxfc6XF9OgAe7VQ+x1byc5jabxyhxA6M7RcOHC7Qb9gXP342bFgfJkO9geQw8ebey8SY6baAi3SHEEd4W7EGvjdEzDh17+7vWsREskbJJixaZacPPTTLJdP25sRG8aHnNv3BzfAg+K3sXxFjqZ+Z7QXxE2LgDctuABxuuMnGi3W/e5xPtWk/HWNN7sv1an1Le2R/WPc1nxAcha/mFodBGI42uf8BJvbib213K215D7AgEE6g6gjebhc92hpDS1OZosyTnNA0Fj5zRwsfaFOYHjT6ioIA5jWG5t0kix6un1qXxjDW1MRjdod7Xei7j2dBUvZ8DoIrHW91A2jO2eW40tZa2y9SHNsD/0VljmLdRa49IBw7wd65hTvnoX2ka4Nvo4at7juI6t6mGbVAjzmjtuPaulgq2FljquNrNmS9biZmF0+l2rkjFhTxnraSy/aLFKnaupeLMayIHpF3u7idPUuXnaY+nH4/1Xk7TH/wARv996xamve3M/Ve/9wLcOLlb0CvYdqXElznG7nON3E8SSvLpVRHbTfrB3An2L4doZT+jY95O6zHWW41kQ3qGNkzuN7K3uNyf76F8XiBtmjfu1vvudTfrXtUsz8by7iuop4uqiazgLIiIta3IiIiIiIiIiIiIiIiIteroYpQBKxr7brjUX32O8LYREUa3AKUboW99z7Ss8eGQN82GMdeRt/Gy20RYXxjQNwA7BZerr4iLK+r4iLKwtauoI525JW5hvHQQeIPQoMbHRA82WUd7fcFZURFXxspH0zTH7YHuWZuy1P08o760h91lNIi9FxOpURHs1SD/SB7XPPtK2mYPTt3Qx97Gn2hbqIvK8sYGizQAOAFh4L0iIiLxyLfRb4Be0RF45JvojwC9Bo4DwX1ERAl0RERERYWUREREREREREREREREREREREREREWVhERERERERERERERERERERERFhZREREREREREREREREREREREREREREX//2Q==');" >
+               
+            </div>
+            <div class="content-text" style="width:100%;font-size: 18px; height: 40%; border-radius: 40px;text-align: center;">
+                <p class="text" style="padding: 20px;font-family: 'Cherry Swash',cursive;color: #ecf0f1; ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        
+        </div>
+    </div> -->
+{% endblock %}
