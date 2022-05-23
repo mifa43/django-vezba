@@ -16,7 +16,7 @@ Including another URLconf
 from re import I
 from django.contrib import admin
 from django.urls import path
-from blog.views import HomeView, BlogView
+from blog.views import HomeView, BlogView, NewPost
 from django.views.generic import TemplateView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from auth.views import Register as vs
@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', HomeView.as_view(), name="home"),
     path('blog/', BlogView.as_view(), name="blog"),
+    path("post-blog/", NewPost.as_view(), name="post-blog" ),
     path("register/", vs.as_view(), name="register" ),
 
 
