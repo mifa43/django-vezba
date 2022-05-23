@@ -3,7 +3,6 @@ from django.views.generic import TemplateView, CreateView
 from django.urls import reverse_lazy
 from auth.forms import RegisterForm
 
-
 # Create your views here.
 
 class Register(CreateView):
