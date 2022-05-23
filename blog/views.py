@@ -15,10 +15,6 @@ class NewPost(CreateView):
     context_object_name = "form" 
     success_url = "/post-blog"  
     def form_valid(self, form) -> bool:
-        """
-        :fields -> model(PostForm)
-        - if the form is valid True
-            - :return redirect and clear the fields
-        """
+  
         form.instance.user = self.request.user 
         return super(NewPost, self).form_valid(form) 
