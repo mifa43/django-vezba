@@ -10,7 +10,7 @@ class BlogView(TemplateView):
 
 class NewPost(CreateView):
     model = PostForm    # db
-    fields = ("title", "content", "created_on", "photo", "author") 
+    fields = ("title", "content", "photo", "author") 
     template_name = "main/postBlog.html"
     context_object_name = "form" 
     success_url = "/post-blog"  
