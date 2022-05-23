@@ -19,11 +19,13 @@ from django.urls import path
 from blog.views import HomeView, BlogView
 from django.views.generic import TemplateView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from auth.views import Register as vs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', HomeView.as_view(), name="home"),
     path('blog/', BlogView.as_view(), name="blog"),
+    path("register/", vs.as_view(), name="register" ),
 
 
 ]
