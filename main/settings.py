@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-afiryyyzzz$7a$#2x%t3dqsl4c!2v58*_5_41thgqq(8iv30%f
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
 # Application definition
@@ -42,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'auth.apps.AuthConfig',
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
@@ -132,5 +136,6 @@ STATICFILES_DIRS = [
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
