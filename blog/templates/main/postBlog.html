@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+
+{% block title %}
+    Post your blog!
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}  
+    
+    <div class="container py-5" style="width: 30%; height: 60%; background-color: #e2e2e2af; margin-top: 20px; border-radius: 50px; text-align: center;">
+        <h3>Create your Blog</h3>
+        <form method="POST" class="form-group" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form|crispy }}  
+                              
+            <button class="btn btn-primary" type="submit" style="margin: 10px;">Register</button>
+        </form>
+        <p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p>
+    </div>
+{% endblock %}
