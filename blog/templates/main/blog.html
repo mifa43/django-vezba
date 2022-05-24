@@ -248,40 +248,41 @@ a {
 } */
 
 
-    
 
     </style>
     <h1>Welcome to blog</h1>
- 
+    {% for i in post %}
+    
+      
+    
+    <h1>{{i}} aa</h1>
     <!-- <div style="width: 30%; height: 45%; margin: 20px auto 0;"> -->
         <div style="width: 22%; height:100%;background-color: #e2e2e2; float: left;position:absolute ; padding: 20px; border-radius: 40px; margin-left: 10px;">
             
             <ul id="myUL">
                 <li><span class="box">Geting Started</span>
                   <ul class="nested">
-                    <li>Water</li>
-                    <li>Coffee</li>
                     <li><span class="box">Blog</span>
                       <ul class="nested">
-                        <li><a href="#">New post</a></li>
+                        <li><a href="{% url 'post-blog' %}">New post</a></li>
                         <li><a href="{% url 'blog' %}">View post</a></li>
                         <li><a href="#">Your story</a></li>
-                        <li><span class="box">some other things</span>
-                          <ul class="nested">
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>PHP</li>
-                            <li>C++</li>
-                          </ul>
+                       
                         </li>
+                      </ul>
+                    <li><span class="box">some other things</span>
+                      <ul class="nested">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>C++</li>
                       </ul>
                     </li>  
                   </ul>
                 </li>
               </ul>
             
-          
-            
+        
             
         </div>
 
@@ -291,7 +292,7 @@ a {
                         <div class="owl-carousel owl-theme">
                             <div class="blog_item">
                                 <div class="blog_image">
-                                    <img class="img-fluid" src="https://cdn.pixabay.com/photo/2019/03/10/18/31/hong-kong-4046913_960_720.jpg" alt="images not found">
+                                    <img class="img-fluid" src="/media/{{i.photo}}" alt="images not found">
                                     <span><i class="icon ion-md-create"></i></span>
                                 </div>
                                 <div class="blog_details">
@@ -365,4 +366,5 @@ a {
                 }
                 </script>
     </div>
+    {% endfor %}
 {% endblock %}
