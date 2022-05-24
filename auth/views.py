@@ -11,5 +11,5 @@ class Register(CreateView):
     """
     form_class = RegisterForm
     
-    template_name = "register/registration.html"
+    template_name = "registration/registration.html"
     success_url = reverse_lazy("home")
