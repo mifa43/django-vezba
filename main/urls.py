@@ -20,6 +20,9 @@ from blog.views import HomeView, BlogView, NewPost
 from django.views.generic import TemplateView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from auth.views import Register as vs
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,7 +30,8 @@ urlpatterns = [
     path('blog/', BlogView.as_view(), name="blog"),
     path("post-blog/", NewPost.as_view(), name="post-blog" ),
     path("register/", vs.as_view(), name="register" ),
+    path("acc/", include("django.contrib.auth.urls"), name="login")
 
 
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += staticfiles_urlpatterns()
