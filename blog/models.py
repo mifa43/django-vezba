@@ -11,8 +11,8 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField()
     created_on = models.DateTimeField(default=timezone.now)
-    photo = models.ImageField(upload_to='postImage')
-    author = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to='postImage/', blank=True, null=True)
+    author = models.CharField(default=User,max_length=255)
     active = models.BooleanField(default=True)
     
     def __str__(self):
