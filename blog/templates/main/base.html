@@ -125,7 +125,11 @@
       <a href="{% url 'home' %}">Home</a>
       <a href="{% url 'blog' %}">Blog</a>
       <a href="#">About</a>
+      {% if user.is_authenticated %}
+      <a href="/acc/logout">Logout</a>
+      {% else %}
       <a href="{% url 'login' %}">Sign in</a>
+      {% endif %}
       <a href="{% url 'register' %}">Join new</a>
       <div class="animation start-home"></div>
     </nav>
